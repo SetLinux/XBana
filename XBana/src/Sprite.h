@@ -16,7 +16,9 @@ public:
 	glm::vec2 position;
 	glm::vec2 scale;
 	float rotation;
+	void InitPhysics(bool movable);
 private:
+	b2Body* body;
 	Vertex vertices[6];
 	unsigned int VAO, VBO;
 	Texture* tex;

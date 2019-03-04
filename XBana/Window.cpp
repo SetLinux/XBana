@@ -13,28 +13,26 @@ Window::~Window()
 
 void Window::Loop(std::function<void()> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under)
 {
-	static double limitFPS = 1.0 / 60.0;
+	const double maxFPS = 60.0;
+	const double maxPeriod = 1.0 / maxFPS;
 
-	double lastTime = glfwGetTime(), timer = lastTime;
-	double deltaTime = 0, nowTime = 0;
-	int frames = 0, updates = 0;
+	bool running = true;
+	double lastTime = 0.0;
 
 	while (!glfwWindowShouldClose(under))
 	{
 
 
+		double time = glfwGetTime();
+		double deltaTime = time - lastTime;
 
-		// - Measure time
-		nowTime = glfwGetTime();
-		deltaTime += (nowTime - lastTime) / limitFPS;
-		lastTime = nowTime;
-
-		// - Only update at 60 frames / s
-		while (deltaTime >= 1.0) {
-			fixedUpdate(deltaTime);  // - Update function
-			updates++;
-			deltaTime--;
+		if (deltaTime >= maxPeriod) {
+			lastTime = time;
+			// code here gets called with max FPS
+			fixedUpdate(deltaTime);
+			std::cout << "Updating" << std::endl;
 		}
+		// - Measure time
 		// - Render at maximum possible frames
 		 // - Render function
 		glEnable(GL_MULTISAMPLE);
@@ -44,19 +42,10 @@ void Window::Loop(std::function<void()> under_update, std::function<void(float)>
 		glfwPollEvents();
 		under_update();
 		glfwSwapBuffers(under);
-
-		frames++;
-
-		// - Reset after one second
-		if (glfwGetTime() - timer > 1.0) {
-			timer++;
-			std::cout << "FPS: " << frames << " Updates:" << updates << std::endl;
-			updates = 0, frames = 0;
-		}
-		}
-	glfwTerminate();
-
 }
+	glfwTerminate();
+		}
+
 
 GLFWwindow * Window::MakeWindow()
 {

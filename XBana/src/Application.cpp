@@ -49,40 +49,26 @@ void upd() {
 	test.Draw();
 	test2.Draw();
 	
-	test.position = glm::vec2(body->GetPosition().x / Game::kPixelsPerMeter, body->GetPosition().y / Game::kPixelsPerMeter);
-
 }
 void FixedUpdate(float dt) {
-	Game::GetWorld()->Step(dt, 6, 1);
+	Game::GetWorld()->Step(dt, 12, 9);
+	Game::GetWorld()->ClearForces();
 }
 int main(void)
 {
-	b2BodyDef bodyDef;
-	bodyDef.type = b2_dynamicBody;
-	bodyDef.position.Set(0, 0);
-	bodyDef.fixedRotation = true;
-	body = Game::GetWorld()->CreateBody(&bodyDef);
-	b2PolygonShape shape;
-	shape.SetAsBox(
-		100 / Game::kPixelsPerMeter,
-		100 / Game::kPixelsPerMeter
-	);
-	b2FixtureDef fixtureDef;
-	fixtureDef.shape = &shape;
-	fixtureDef.density = 1.0f;
-	fixtureDef.friction = 0.7f;
-	fixtureDef.restitution = 0.1f;
-	body->CreateFixture(&fixtureDef);
-
 	
 	GLFWwindow* window = Window::MakeWindow();
 	shdr.Compile();
 	shdr.Use();
 	test.Init();
 	test.SetTexture("wall.jpg");
-	test.position = glm::vec2(100,0);
+	test.position = glm::vec2(100,-2000);
 	test2.Init();
 	test2.SetTexture("wall.jpg");
+	test2.position = glm::vec2(100, 150);
+	test2.scale = glm::vec2(400, 100);
+	test.InitPhysics(true);
+	test2.InitPhysics(false);
 	Window::Loop(upd,FixedUpdate, window);
 	
 	return 0;

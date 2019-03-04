@@ -1,7 +1,7 @@
 #include "Game.h"
 
-float Game::kPixelsPerMeter = 0.9f;
-float Game::kGravity = Game::kPixelsPerMeter / 0.7f; // adjust this to taste
+float Game::kPixelsPerMeter =32.f;
+float Game::kGravity = 50.2f; // adjust this to taste
 b2World* Game::world;
 
 

@@ -1,12 +1,12 @@
 #include "Sprite.h"
-
+#include "../Game.h"
 
 float floatvertices[] = {
 	// first triangle
 	 0.5f,  0.5f,   // top right
 	 0.5f, -0.5f,   // bottom right
 	-0.5f,  0.5f,   // top left 
-	// second tria
+	// second triangle
 	 0.5f, -0.5f,   // bottom right
 	-0.5f, -0.5f,   // bottom left
 	-0.5f,  0.5f,   // top left
@@ -73,6 +73,10 @@ void Sprite::Init() {
 	glBindVertexArray(0);
 }
 void Sprite::Draw() {
+	if (body) {
+		position = glm::vec2(body->GetPosition().x * Game::kPixelsPerMeter, body->GetPosition().y * Game::kPixelsPerMeter);
+	}
+
 
 	glBindVertexArray(VAO);
 	unsigned int modelLoc = glGetUniformLocation(1, "model");;
@@ -100,6 +104,26 @@ void Sprite::SetTexture(std::string path)
 {
 	tex = new Texture(path);
 	tex->Init();
+}
+void Sprite::InitPhysics(bool movable)
+{
+
+	b2BodyDef bodyDef;
+	bodyDef.type = b2_dynamicBody;
+	bodyDef.position.Set(position.x / Game::kPixelsPerMeter, position.y / Game::kPixelsPerMeter);
+	bodyDef.fixedRotation = true;
+	body = Game::GetWorld()->CreateBody(&bodyDef);
+	b2PolygonShape shape;
+	shape.SetAsBox(
+		(scale.x / 2.f) / Game::kPixelsPerMeter,
+		(scale.y / 2.f ) / Game::kPixelsPerMeter);
+	b2FixtureDef fixtureDef;
+	body->SetType(movable ? b2_dynamicBody : b2_staticBody);
+	fixtureDef.shape = &shape;
+	fixtureDef.density = 12.0f;
+	fixtureDef.friction = 0.7f;
+	fixtureDef.restitution = .7f;
+	body->CreateFixture(&fixtureDef);
 }
 Sprite::~Sprite()
 {
