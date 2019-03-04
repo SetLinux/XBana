@@ -1,7 +1,7 @@
 #include "Game.h"
 
-float Game::kPixelsPerMeter =32.f;
-float Game::kGravity = 50.2f; // adjust this to taste
+float Game::kPixelsPerMeter =90.f;
+float Game::kGravity = 20.2f; // adjust this to taste
 b2World* Game::world;
 
 
@@ -28,4 +28,10 @@ b2World* Game::GetWorld()
 void Game::ChangePPM(float value)
 {
 	kPixelsPerMeter = value;
+}
+
+float Game::lerp(float a, float b, float f)
+{
+		return a + f * (b - a);
+
 }

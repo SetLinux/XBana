@@ -14,12 +14,12 @@ float floatvertices[] = {
 
 
 float texCoords[] = {
- 1.0f, 1.0f,   // top right};
- 1.0f, 0.0f,   // bottom right
- 0.0f, 1.0f,    // top left 
- 1.0f, 0.0f,   // bottom right
- 0.0f, 0.0f,   // bottom left
- 0.0f, 1.0f    // top left 
+ 1.0f, 1.0f,  
+ 1.0f, 0.0f,  
+ 0.0f, 1.0f,  
+ 1.0f, 0.0f,  
+ 0.0f, 0.0f,  
+ 0.0f, 1.0f   
 };
 Sprite::Sprite()
 {
@@ -43,11 +43,8 @@ Sprite::Sprite()
 	tex = nullptr;
 }
 void Sprite::Init() {
-
-	model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
 	view = glm::mat4(1.0f);
 	projection = glm::mat4(1.0f);
-	model = glm::scale(model, glm::vec3(100, 100, 100));
 	view = glm::translate(view, glm::vec3(320.0f, 240.0f, 0.f));
 	projection = glm::ortho(0.0f, 640.0f, 480.0f, 0.0f, -1.0f, 1.0f);
 	// retrieve the matrix uniform locations
@@ -68,25 +65,25 @@ void Sprite::Init() {
 	glEnableVertexAttribArray(0);
 	glEnableVertexAttribArray(1);
 	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)offsetof(Vertex,Vertex::Position));
+	
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)offsetof(Vertex, Vertex::TexCoord));
 	
 	glBindVertexArray(0);
 }
 void Sprite::Draw() {
+	
+	// Setting Up sprite moving with Box2D Body Position
 	if (body) {
+		//position = glm::vec2(Game::lerp(position.x, body->GetPosition().x * Game::kPixelsPerMeter, 0.016f), Game::lerp(position.y, body->GetPosition().y * Game::kPixelsPerMeter, 0.016f));
 		position = glm::vec2(body->GetPosition().x * Game::kPixelsPerMeter, body->GetPosition().y * Game::kPixelsPerMeter);
 	}
 
-
-	glBindVertexArray(VAO);
-	unsigned int modelLoc = glGetUniformLocation(1, "model");;
 	if (tex)tex->Use();
 
-	//glm::mat4 localm = glm::mat4(1.0f);
-	//localm = glm::scale(localm, glm::vec3(scale, 0.0f));
-	//localm = glm::translate(localm, glm::vec3(position.x / scale.x , position.y / scale.y, 1.0f));
-	//localm = glm::rotate(localm, rotation, glm::vec3(0.0f, 0.0f, 1.0f));
+	glBindVertexArray(VAO);
 
+
+	unsigned int modelLoc = glGetUniformLocation(1, "model");;
 	glm::mat4 model = glm::mat4(1.0f);
 	model = glm::translate(model, glm::vec3(position, 0.0f));
 
@@ -99,6 +96,34 @@ void Sprite::Draw() {
 
 	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 	glDrawArrays(GL_TRIANGLES, 0, 6);
+}
+void Sprite::Draw(float dt)
+{
+	// Setting Up sprite moving with Box2D Body Position
+	if (body) {
+		position = glm::vec2(Game::lerp(position.x, body->GetPosition().x * Game::kPixelsPerMeter, dt), Game::lerp(position.y, body->GetPosition().y * Game::kPixelsPerMeter, dt));
+	//position = glm::vec2(body->GetPosition().x * Game::kPixelsPerMeter, body->GetPosition().y * Game::kPixelsPerMeter);
+	}
+
+	if (tex)tex->Use();
+
+	glBindVertexArray(VAO);
+
+
+	unsigned int modelLoc = glGetUniformLocation(1, "model");;
+	glm::mat4 model = glm::mat4(1.0f);
+	model = glm::translate(model, glm::vec3(position, 0.0f));
+
+	model = glm::translate(model, glm::vec3(0.5f * scale.x, 0.5f * scale.y, 0.0f));
+	model = glm::rotate(model, rotation, glm::vec3(0.0f, 0.0f, 1.0f));
+	model = glm::translate(model, glm::vec3(-0.5f * scale.x, -0.5f * scale.y, 0.0f));
+
+	model = glm::scale(model, glm::vec3(scale, 1.0f));
+
+
+	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+	glDrawArrays(GL_TRIANGLES, 0, 6);
+
 }
 void Sprite::SetTexture(std::string path)
 {
@@ -122,7 +147,7 @@ void Sprite::InitPhysics(bool movable)
 	fixtureDef.shape = &shape;
 	fixtureDef.density = 12.0f;
 	fixtureDef.friction = 0.7f;
-	fixtureDef.restitution = .7f;
+	fixtureDef.restitution = .4f;
 	body->CreateFixture(&fixtureDef);
 }
 Sprite::~Sprite()

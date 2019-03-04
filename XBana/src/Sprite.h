@@ -11,6 +11,7 @@ public:
 	~Sprite();
 	void Init();
 	void Draw();
+	void Draw(float dt);
 	void SetTexture(std::string path);
 	Shader* shdr;
 	glm::vec2 position;
@@ -22,7 +23,6 @@ private:
 	Vertex vertices[6];
 	unsigned int VAO, VBO;
 	Texture* tex;
-	glm::mat4 model;
 	unsigned int viewLoc;
 	unsigned int projectionLoc;
 	glm::mat4 view;

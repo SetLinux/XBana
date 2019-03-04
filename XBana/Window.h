@@ -9,6 +9,6 @@ public:
 	~Window();
 
 	static GLFWwindow* MakeWindow();
-	static void Loop(std::function<void()> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under);
+	static void Loop(std::function<void(float)> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under);
 };
 

@@ -45,13 +45,13 @@ void update() {
 	std::cout << "test" << std::endl;
 }
 
-void upd() {
+void upd(float dt) {
 	test.Draw();
-	test2.Draw();
+	test2.Draw(dt);
 	
 }
 void FixedUpdate(float dt) {
-	Game::GetWorld()->Step(dt, 12, 9);
+	Game::GetWorld()->Step(dt, 12, 15);
 	Game::GetWorld()->ClearForces();
 }
 int main(void)

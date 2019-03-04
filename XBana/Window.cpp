@@ -11,9 +11,9 @@ Window::~Window()
 {
 }
 
-void Window::Loop(std::function<void()> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under)
+void Window::Loop(std::function<void(float)> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under)
 {
-	const double maxFPS = 60.0;
+	const double maxFPS = 360.0f;
 	const double maxPeriod = 1.0 / maxFPS;
 
 	bool running = true;
@@ -27,24 +27,23 @@ void Window::Loop(std::function<void()> under_update, std::function<void(float)>
 		double deltaTime = time - lastTime;
 
 		if (deltaTime >= maxPeriod) {
-			lastTime = time;
-			// code here gets called with max FPS
-			fixedUpdate(deltaTime);
-			std::cout << "Updating" << std::endl;
+		fixedUpdate(deltaTime);
+			
+		lastTime = time;
 		}
-		// - Measure time
-		// - Render at maximum possible frames
-		 // - Render function
+
+		// code here gets called with max FPS
 		glEnable(GL_MULTISAMPLE);
 
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 		glfwPollEvents();
-		under_update();
+		under_update(deltaTime);
 		glfwSwapBuffers(under);
+		glfwSwapInterval(1);
 }
 	glfwTerminate();
-		}
+}
 
 
 GLFWwindow * Window::MakeWindow()
