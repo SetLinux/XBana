@@ -2,6 +2,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <functional>
+#include "Game.h"
 class Window
 {
 public:
@@ -9,6 +10,6 @@ public:
 	~Window();
 
 	static GLFWwindow* MakeWindow();
-	static void Loop(std::function<void(float)> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under);
+	static void Loop(std::function<void(float)> under_update, std::function<void(float,float)> fixedUpdate, GLFWwindow* under);
 };
 

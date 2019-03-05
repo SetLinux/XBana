@@ -101,8 +101,9 @@ void Sprite::Draw(float dt)
 {
 	// Setting Up sprite moving with Box2D Body Position
 	if (body) {
-		position = glm::vec2(Game::lerp(position.x, body->GetPosition().x * Game::kPixelsPerMeter, dt), Game::lerp(position.y, body->GetPosition().y * Game::kPixelsPerMeter, dt));
+	//	position = glm::vec2(Game::lerp(position.x, body->GetPosition().x * Game::kPixelsPerMeter, dt), Game::lerp(position.y, body->GetPosition().y * Game::kPixelsPerMeter, dt));
 	//position = glm::vec2(body->GetPosition().x * Game::kPixelsPerMeter, body->GetPosition().y * Game::kPixelsPerMeter);
+		position = smoothedposition * Game::kPixelsPerMeter;
 	}
 
 	if (tex)tex->Use();

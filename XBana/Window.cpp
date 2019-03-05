@@ -11,38 +11,43 @@ Window::~Window()
 {
 }
 
-void Window::Loop(std::function<void(float)> under_update, std::function<void(float)> fixedUpdate, GLFWwindow* under)
+void Window::Loop(std::function<void(float)> under_update, std::function<void(float,float)> fixedUpdate, GLFWwindow* under)
 {
-	const double maxFPS = 360.0f;
-	const double maxPeriod = 1.0 / maxFPS;
 
-	bool running = true;
-	double lastTime = 0.0;
+	double t = 0.0;
+	double dt = 0.02;
+
+	double currentTime = glfwGetTime();
+	double accumulator = 0.0;
 
 	while (!glfwWindowShouldClose(under))
-	{
+	{  // - Measure time
+		double newTime = glfwGetTime();
+		double frameTime = newTime - currentTime;
+		if (frameTime > 0.25)
+			frameTime = 0.25;
+		currentTime = newTime;
 
+		accumulator += frameTime;
 
-		double time = glfwGetTime();
-		double deltaTime = time - lastTime;
-
-		if (deltaTime >= maxPeriod) {
-		fixedUpdate(deltaTime);
-			
-		lastTime = time;
+		while (accumulator >= dt)
+		{
+			fixedUpdate(dt,1.0f);
+			t += dt;
+			accumulator -= dt;
 		}
 
-		// code here gets called with max FPS
-		glEnable(GL_MULTISAMPLE);
+		const double alpha = accumulator / dt;
+
 
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 		glfwPollEvents();
-		under_update(deltaTime);
+		under_update(alpha);
 		glfwSwapBuffers(under);
 		glfwSwapInterval(1);
-}
-	glfwTerminate();
+
+	}
 }
 
 

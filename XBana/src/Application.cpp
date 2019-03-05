@@ -41,18 +41,31 @@ std::string fragmentShader = (
 	);
 Shader shdr(VertexShader, fragmentShader);
 
+void smooth(float ff) {
+	const float oneMinusRatio = 1.f - ff;
+	test.smoothedposition =
+		glm::vec2(ff * (test.body->GetPosition().x), ff * (test.body->GetPosition().y)) + (oneMinusRatio * test.previousposition);
+
+}
+void resetsmooth(float ff) {
+	test.smoothedposition = glm::vec2(test.body->GetPosition().x, test.body->GetPosition().y);
+}
 void update() {
 	std::cout << "test" << std::endl;
 }
 
 void upd(float dt) {
-	test.Draw();
-	test2.Draw(dt);
-	
+	smooth(dt);
+	test.Draw(dt);
+	test2.Draw();
 }
-void FixedUpdate(float dt) {
+
+void FixedUpdate(float dt,float ffs) {
+	test.previousposition = glm::vec2(test.body->GetPosition().x, test.body->GetPosition().y);
+	resetsmooth(ffs);
 	Game::GetWorld()->Step(dt, 12, 15);
 	Game::GetWorld()->ClearForces();
+	
 }
 int main(void)
 {
