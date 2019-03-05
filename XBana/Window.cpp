@@ -15,7 +15,7 @@ void Window::Loop(std::function<void(float)> under_update, std::function<void(fl
 {
 
 	double t = 0.0;
-	double dt = 0.02;
+	double dt = 0.01;
 
 	double currentTime = glfwGetTime();
 	double accumulator = 0.0;

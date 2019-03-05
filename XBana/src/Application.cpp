@@ -63,7 +63,7 @@ void upd(float dt) {
 void FixedUpdate(float dt,float ffs) {
 	test.previousposition = glm::vec2(test.body->GetPosition().x, test.body->GetPosition().y);
 	resetsmooth(ffs);
-	Game::GetWorld()->Step(dt, 12, 15);
+	Game::GetWorld()->Step(dt, 8, 3);
 	Game::GetWorld()->ClearForces();
 	
 }
