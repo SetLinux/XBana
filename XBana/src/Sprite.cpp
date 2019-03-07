@@ -90,9 +90,11 @@ void Sprite::Draw() {
 	model = glm::translate(model, glm::vec3(0.5f * scale.x, 0.5f * scale.y, 0.0f));
 	model = glm::rotate(model, rotation, glm::vec3(0.0f, 0.0f, 1.0f));
 	model = glm::translate(model, glm::vec3(-0.5f * scale.x, -0.5f * scale.y, 0.0f));
-
+	//TODO : FIX THIS
 	model = glm::scale(model, glm::vec3(scale, 1.0f));
 
+	glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+	glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
 	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 	glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -103,6 +105,7 @@ void Sprite::Draw(float dt)
 	if (body) {
 	//	position = glm::vec2(Game::lerp(position.x, body->GetPosition().x * Game::kPixelsPerMeter, dt), Game::lerp(position.y, body->GetPosition().y * Game::kPixelsPerMeter, dt));
 	//position = glm::vec2(body->GetPosition().x * Game::kPixelsPerMeter, body->GetPosition().y * Game::kPixelsPerMeter);
+		smoothedposition= Game::interpolate(previousposition, glm::vec2(body->GetPosition().x, body->GetPosition().y), dt) ;
 		position = smoothedposition * Game::kPixelsPerMeter;
 	}
 

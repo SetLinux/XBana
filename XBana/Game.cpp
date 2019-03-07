@@ -35,3 +35,11 @@ float Game::lerp(float a, float b, float f)
 		return a + f * (b - a);
 
 }
+
+glm::vec2 Game::interpolate(glm::vec2 previous, glm::vec2 currnet, float alpha)
+{
+	// state = currentstate * alpha + previousstate * (1-alpha)
+	const float oneMinusRatio = 1.f - alpha;
+	return glm::vec2(alpha * (currnet.x), alpha * (currnet.y)) + (oneMinusRatio * previous);
+}
+

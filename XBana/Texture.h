@@ -10,8 +10,8 @@ public:
 	~Texture();
 	void Init();
 	void Use();
-private:
 	std::string path;
+private:
 	unsigned int TexID;
 };
 

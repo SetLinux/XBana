@@ -11,11 +11,11 @@ Window::~Window()
 {
 }
 
-void Window::Loop(std::function<void(float)> under_update, std::function<void(float,float)> fixedUpdate, GLFWwindow* under)
+void Window::Loop(Level* level, GLFWwindow* under)
 {
 
 	double t = 0.0;
-	double dt = 0.01;
+	float dt = (float)(1.f / 45.f);
 
 	double currentTime = glfwGetTime();
 	double accumulator = 0.0;
@@ -27,12 +27,11 @@ void Window::Loop(std::function<void(float)> under_update, std::function<void(fl
 		if (frameTime > 0.25)
 			frameTime = 0.25;
 		currentTime = newTime;
-
 		accumulator += frameTime;
 
 		while (accumulator >= dt)
 		{
-			fixedUpdate(dt,1.0f);
+			level->FixedUpdate(dt);
 			t += dt;
 			accumulator -= dt;
 		}
@@ -43,7 +42,7 @@ void Window::Loop(std::function<void(float)> under_update, std::function<void(fl
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT);
 		glfwPollEvents();
-		under_update(alpha);
+		level->Update(alpha);
 		glfwSwapBuffers(under);
 		glfwSwapInterval(1);
 
