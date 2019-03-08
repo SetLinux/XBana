@@ -4,12 +4,14 @@
 SpriteComponent::SpriteComponent()
 {
 
-
+	
 }
 
 
 SpriteComponent::~SpriteComponent()
 {
+	glDeleteBuffers(1, &VBO);
+	glDeleteVertexArrays(1, &VAO);
 }
 
 void SpriteComponent::Init() {
@@ -71,7 +73,7 @@ void SpriteComponent::Update(float dt) {
 }
 void SpriteComponent::Draw(float dt) {
 
-	if (tex)tex->Use();
+	if (tex) { tex->Use(); };
 
 	glBindVertexArray(VAO);
 

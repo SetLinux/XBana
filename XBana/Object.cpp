@@ -20,21 +20,21 @@ Object::~Object()
 
 void Object::Init()
 {
-	for (std::vector<Component*>::iterator it = Components.begin(); it != Components.end(); ++it) {
-		(*it)->Init();
+	for (auto& it : Components) {
+		(it)->Init();
 	}
 }
 
 void Object::Update(float dt)
 {
-	for (std::vector<Component*>::iterator it = Components.begin(); it != Components.end(); ++it) {
-		(*it)->Update(dt);
+	for (auto& it : Components) {
+		(it)->Update(dt);
 	}
 }
 
 void Object::FixedUpdate(float dt)
 {
-	for (std::vector<Component*>::iterator it = Components.begin(); it != Components.end(); ++it) {
-		(*it)->FixedUpdate(dt);
+	for (auto& it : Components) {
+		(it)->FixedUpdate(dt);
 	}
 }

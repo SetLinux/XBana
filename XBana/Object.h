@@ -34,9 +34,9 @@ inline void Object::AddComponent()
 template<class T>
 inline T* Object::GetComponent(ComponentType Ctype)
 {
-	for (std::vector<Component*>::iterator it = Components.begin(); it != Components.end(); ++it) {
-		if ((*it)->GetType() == Ctype) {
-			return (T*)(*it);
+	for (auto& it : Components) {
+		if ((it)->GetType() == Ctype) {
+			return (T*)(it);
 		}
 	}
 	return nullptr;

@@ -92,6 +92,7 @@ int main(void)
 #include "../Object.h"
 #include "../Component.h"
 #include "../Components/SpriteComponent.h"
+#include "../Components/PhysicsComponent.h"
 std::string VertexShader = (
 	"#version 330 core \n"
 	"\n layout(location = 0) in vec4 position; \n"
@@ -121,16 +122,17 @@ std::string fragmentShader = (
 Shader shdr(VertexShader, fragmentShader);
 class MyLevel : public Level {
 	Object obj;
-
+	Object obj2;
 	virtual void Update(float dt) override {
 		Level::Update(dt);
 		obj.Update(dt);
-	
+		obj2.Update(dt);
 	};
 	virtual void FixedUpdate(float dt) override {
+		
+		obj.FixedUpdate(dt);
+		obj2.FixedUpdate(dt);
 		Level::FixedUpdate(dt);
-		Texture* test = ResourceManager::LoadTexture("wall.jpg");
-
 
 	
 	
@@ -138,11 +140,25 @@ class MyLevel : public Level {
 public:
 	void Start() {
 		
-		MakeSprite(glm::vec2(0, 000), glm::vec2(100,100), false, ResourceManager::LoadTexture("wall.jpg"));
-		MakeSprite(glm::vec2(0, 200), glm::vec2(400,100),true, ResourceManager::LoadTexture("wall.jpg"));
+		//MakeSprite(glm::vec2(0, 000), glm::vec2(100, 100), false, ResourceManager::LoadTexture("wall.jpg"));
+		//MakeSprite(glm::vec2(150, 000), glm::vec2(100, 100), false, ResourceManager::LoadTexture("wall.jpg"));
+		//MakeSprite(glm::vec2(0, 200), glm::vec2(400, 100), true, ResourceManager::LoadTexture("wall.jpg"));
+		Texture* test = ResourceManager::LoadTexture("wall.jpg");
+
 		obj.AddComponent<TransformComponent>();
 		obj.AddComponent<SpriteComponent>();
+		obj.GetComponent<TransformComponent>(Transform)->scale = glm::vec2(100, 100);
+		obj.GetComponent<TransformComponent>(Transform)->position = glm::vec2(-110, 0);
+		obj.AddComponent<PhysicsComponent>();
 		obj.Init();
+	
+	
+		obj2.AddComponent<TransformComponent>();
+		obj2.AddComponent<SpriteComponent>();
+		obj2.GetComponent<TransformComponent>(Transform)->scale = glm::vec2(100, 100);
+		obj2.GetComponent<TransformComponent>(Transform)->position = glm::vec2(100, 0);
+		obj2.AddComponent<PhysicsComponent>();
+		obj2.Init();
 	}
 };
 int main() {

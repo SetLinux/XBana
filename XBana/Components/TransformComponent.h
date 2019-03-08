@@ -19,9 +19,9 @@ public:
 
 public:
 	//Base Functions
-	virtual void Init();
-	virtual void Update(float dt);
-	virtual void FixedUpdate(float dt);
-	virtual ComponentType GetType();
+	void Init() override;
+	void Update(float dt) override;
+	void FixedUpdate(float dt) override;
+	ComponentType GetType() override;
 };
 

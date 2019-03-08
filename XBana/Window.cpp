@@ -15,7 +15,7 @@ void Window::Loop(Level* level, GLFWwindow* under)
 {
 
 	double t = 0.0;
-	float dt = (float)(1.f / 45.f);
+	float dt = (float)(1.f / 20.f);
 
 	double currentTime = glfwGetTime();
 	double accumulator = 0.0;
