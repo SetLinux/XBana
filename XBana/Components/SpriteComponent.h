@@ -19,11 +19,11 @@ public:
 	 void Update(float dt) override;
 	 void FixedUpdate(float dt) override;
 	 ComponentType GetType() override;
+	Texture* tex;
 private:
 	void Draw(float dt);
 	Vertex vertices[6];
 	unsigned int VAO, VBO;
-	Texture* tex;
 	unsigned int viewLoc;
 	unsigned int projectionLoc;
 	glm::mat4 view;

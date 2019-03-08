@@ -12,9 +12,9 @@ public:
 	void Init() override;
 	void Update(float dt) override;
 	void FixedUpdate(float dt) override;
-
-private:
+	ComponentType GetType() override;
 	b2Body* body;
+protected:
 	glm::vec2 PreviousPosition;
 	glm::vec2 SmoothedPos;
 };

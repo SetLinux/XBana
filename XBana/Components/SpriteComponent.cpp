@@ -1,5 +1,6 @@
 #include "SpriteComponent.h"
 #include "TransformComponent.h"
+#include "AnimationComponent.h"
 #include "../Object.h"
 SpriteComponent::SpriteComponent()
 {
@@ -30,7 +31,7 @@ void SpriteComponent::Init() {
 	vertices[3].TexCoord = Vector2D(1.0f, 0.0f);
 	vertices[4].TexCoord = Vector2D(0.0f, 0.0f);
 	vertices[5].TexCoord = Vector2D(0.0f, 1.0f);
-	tex = nullptr;
+	
 
 	// Setting Up the Base of my MVP Matrix
 	view = glm::mat4(1.0f);
@@ -73,12 +74,27 @@ void SpriteComponent::Update(float dt) {
 }
 void SpriteComponent::Draw(float dt) {
 
-	if (tex) { tex->Use(); };
+	if (tex) { 
+		tex->Use();
+	};
 
 	glBindVertexArray(VAO);
+	
+	if (Owner->GetComponent<AnimationComponent>(Animator)) {
 
+		unsigned int RowsLoc = glGetUniformLocation(1, "numberOfRows");
+		unsigned int offsetLoc = glGetUniformLocation(1, "offset");
+		glUniform1f(RowsLoc, Owner->GetComponent<AnimationComponent>(Animator)->Rows);
+		glUniform2f(offsetLoc, Owner->GetComponent<AnimationComponent>(Animator)->GetXOffset(), Owner->GetComponent<AnimationComponent>(Animator)->GetYOffset());
+		glUniform1i(glGetUniformLocation(1, "atlas"), 1);
+	}
+	else {
+		glUniform1i(glGetUniformLocation(1, "atlas"), 0);
 
-	unsigned int modelLoc = glGetUniformLocation(1, "model");;
+	}
+
+	
+	unsigned int modelLoc = glGetUniformLocation(1, "model");
 	glm::mat4 model = glm::mat4(1.0f);
 	model = glm::translate(model, glm::vec3(Owner->GetComponent<TransformComponent>(Transform)->position, 0.0f));
 

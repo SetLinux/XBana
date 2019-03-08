@@ -93,6 +93,8 @@ int main(void)
 #include "../Component.h"
 #include "../Components/SpriteComponent.h"
 #include "../Components/PhysicsComponent.h"
+#include "../Components/AnimationComponent.h"
+#include "../Animation.h"
 std::string VertexShader = (
 	"#version 330 core \n"
 	"\n layout(location = 0) in vec4 position; \n"
@@ -100,10 +102,15 @@ std::string VertexShader = (
 	"uniform mat4 model; \n"
 	"uniform mat4 view; \n"
 	"uniform mat4 projection;\n "
+	"uniform float numberOfRows;\n"
+	"uniform vec2 offset; \n"
+	"uniform bool atlas;"
 	"out vec2 TexCoord; \n"
 	"void main() { \n"
 	" gl_Position = projection * view * model * vec4(position.xy,0.0,1.0); \n"
-	"TexCoord = aTexCoord; \n "
+	"if(atlas){ \n"
+	"TexCoord = (aTexCoord/numberOfRows) + offset; "
+	"} \n else{ \n TexCoord = aTexCoord; \n }"
 	"}"
 
 	);
@@ -120,21 +127,29 @@ std::string fragmentShader = (
 
 	);
 Shader shdr(VertexShader, fragmentShader);
+Animation anim;
 class MyLevel : public Level {
 	Object obj;
 	Object obj2;
+	Object obj3;
+
 	virtual void Update(float dt) override {
 		Level::Update(dt);
 		obj.Update(dt);
 		obj2.Update(dt);
+		if (obj.GetComponent<TransformComponent>(Transform)->position.y != obj2.GetComponent<TransformComponent>(Transform)->position.y) {
+			std::cout << " A Problem " << std::endl;
+		}
+		obj3.Update(dt);
 	};
 	virtual void FixedUpdate(float dt) override {
 		
 		obj.FixedUpdate(dt);
 		obj2.FixedUpdate(dt);
+		obj3.FixedUpdate(dt);
 		Level::FixedUpdate(dt);
-
-	
+		anim.Update(dt);
+		std::cout << anim.currentIndex << std::endl;
 	
 	};
 public:
@@ -143,22 +158,38 @@ public:
 		//MakeSprite(glm::vec2(0, 000), glm::vec2(100, 100), false, ResourceManager::LoadTexture("wall.jpg"));
 		//MakeSprite(glm::vec2(150, 000), glm::vec2(100, 100), false, ResourceManager::LoadTexture("wall.jpg"));
 		//MakeSprite(glm::vec2(0, 200), glm::vec2(400, 100), true, ResourceManager::LoadTexture("wall.jpg"));
-		Texture* test = ResourceManager::LoadTexture("wall.jpg");
-
+		Texture* test = ResourceManager::LoadTexture("terrain.png");
+		Texture* wall = ResourceManager::LoadTexture("wall.jpg");
 		obj.AddComponent<TransformComponent>();
 		obj.AddComponent<SpriteComponent>();
+		obj.AddComponent<AnimationComponent>();
+		obj.GetComponent<SpriteComponent>(Renderer)->tex = test;
+		obj.GetComponent<AnimationComponent>(Animator)->index = 0;
+		obj.GetComponent<AnimationComponent>(Animator)->Rows= 256/16;
+
 		obj.GetComponent<TransformComponent>(Transform)->scale = glm::vec2(100, 100);
-		obj.GetComponent<TransformComponent>(Transform)->position = glm::vec2(-110, 0);
+		obj.GetComponent<TransformComponent>(Transform)->position = glm::vec2(-110, -3000);
 		obj.AddComponent<PhysicsComponent>();
 		obj.Init();
 	
 	
 		obj2.AddComponent<TransformComponent>();
 		obj2.AddComponent<SpriteComponent>();
+		obj2.GetComponent<SpriteComponent>(Renderer)->tex = wall;
 		obj2.GetComponent<TransformComponent>(Transform)->scale = glm::vec2(100, 100);
-		obj2.GetComponent<TransformComponent>(Transform)->position = glm::vec2(100, 0);
+		obj2.GetComponent<TransformComponent>(Transform)->position = glm::vec2(100, -3000);
 		obj2.AddComponent<PhysicsComponent>();
 		obj2.Init();
+	
+		obj3.AddComponent<TransformComponent>();
+		obj3.AddComponent<SpriteComponent>();
+		obj3.GetComponent<TransformComponent>(Transform)->scale = glm::vec2(500, 100);
+		obj3.GetComponent<TransformComponent>(Transform)->position = glm::vec2(100, 200);
+		obj3.AddComponent<PhysicsComponent>();
+		obj3.Init();
+		obj3.GetComponent<PhysicsComponent>(Physics)->body->SetType(b2_staticBody);
+		anim.speed = 3.f;
+		anim.TimeBetween = 5.f;
 	}
 };
 int main() {

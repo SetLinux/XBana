@@ -15,7 +15,7 @@ void Window::Loop(Level* level, GLFWwindow* under)
 {
 
 	double t = 0.0;
-	float dt = (float)(1.f / 20.f);
+	float dt = (float)(1.f / 40.f);
 
 	double currentTime = glfwGetTime();
 	double accumulator = 0.0;
@@ -44,8 +44,7 @@ void Window::Loop(Level* level, GLFWwindow* under)
 		glfwPollEvents();
 		level->Update(alpha);
 		glfwSwapBuffers(under);
-		glfwSwapInterval(1);
-
+	
 	}
 }
 
@@ -55,7 +54,7 @@ GLFWwindow * Window::MakeWindow()
 	glfwInit();
 	GLFWwindow* window;
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,5);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,0);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glfwWindowHint(GLFW_SAMPLES, 4);
 

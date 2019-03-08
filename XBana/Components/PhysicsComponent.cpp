@@ -1,5 +1,5 @@
 #include "PhysicsComponent.h"
-
+#include <iostream>
 
 
 PhysicsComponent::PhysicsComponent()
@@ -10,6 +10,8 @@ PhysicsComponent::PhysicsComponent()
 
 PhysicsComponent::~PhysicsComponent()
 {
+	Game::GetWorld()->DestroyBody(body);
+	
 }
 
 void PhysicsComponent::Init() {
@@ -31,9 +33,16 @@ void PhysicsComponent::Init() {
 	body->CreateFixture(&fixtureDef);
 }
 void PhysicsComponent::Update(float dt){
-	SmoothedPos =  Game::interpolate(PreviousPosition == glm::vec2(0,0)? Owner->GetComponent<TransformComponent>(Transform)->position : PreviousPosition, glm::vec2(body->GetPosition().x, body->GetPosition().y), dt);
-	Owner->GetComponent<TransformComponent>(Transform)->position = SmoothedPos * Game::kPixelsPerMeter;
+	SmoothedPos =  Game::interpolate(PreviousPosition == glm::vec2(0,0)? Owner->GetComponent<TransformComponent>(Transform)->position / Game::kPixelsPerMeter : PreviousPosition,glm::vec2(body->GetPosition().x, body->GetPosition().y), dt);
+
+	glm::vec2 finals = glm::vec2(SmoothedPos.x * Game::kPixelsPerMeter, SmoothedPos.y * Game::kPixelsPerMeter);
+	Owner->GetComponent<TransformComponent>(Transform)->position = finals;
 }
 void PhysicsComponent::FixedUpdate(float dt) {
 	PreviousPosition = glm::vec2(body->GetPosition().x,body->GetPosition().y);
+}
+
+ComponentType PhysicsComponent::GetType()
+{
+	return Physics;
 }

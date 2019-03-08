@@ -23,7 +23,6 @@ Texture* ResourceManager::LoadTexture(std::string path)
 	}
 	Texture* tex = new Texture(path);
 	tex->Init();
-	tex->Use();
 	TexturesList.push_back(tex);
 	return TexturesList.back();
 }

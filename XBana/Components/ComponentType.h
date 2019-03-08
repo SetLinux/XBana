@@ -4,5 +4,6 @@ enum ComponentType
 	Transform,
 	Renderer,
 	Physics,
-	Script
+	Script,
+	Animator
 };
