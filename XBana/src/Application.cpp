@@ -89,6 +89,9 @@ int main(void)
 #include "../Level.h"
 #include "../ResourceManager.h"
 #include "../Window.h"
+#include "../Object.h"
+#include "../Component.h"
+#include "../Components/SpriteComponent.h"
 std::string VertexShader = (
 	"#version 330 core \n"
 	"\n layout(location = 0) in vec4 position; \n"
@@ -117,20 +120,29 @@ std::string fragmentShader = (
 	);
 Shader shdr(VertexShader, fragmentShader);
 class MyLevel : public Level {
+	Object obj;
+
 	virtual void Update(float dt) override {
 		Level::Update(dt);
+		obj.Update(dt);
+	
 	};
 	virtual void FixedUpdate(float dt) override {
 		Level::FixedUpdate(dt);
 		Texture* test = ResourceManager::LoadTexture("wall.jpg");
-		std::cout << Sprites[0]->body->GetPosition().y << std::endl;
+
+
+	
+	
 	};
 public:
 	void Start() {
 		
 		MakeSprite(glm::vec2(0, 000), glm::vec2(100,100), false, ResourceManager::LoadTexture("wall.jpg"));
 		MakeSprite(glm::vec2(0, 200), glm::vec2(400,100),true, ResourceManager::LoadTexture("wall.jpg"));
-
+		obj.AddComponent<TransformComponent>();
+		obj.AddComponent<SpriteComponent>();
+		obj.Init();
 	}
 };
 int main() {
@@ -138,6 +150,7 @@ int main() {
 	MyLevel* level = new MyLevel();
 	shdr.Compile();
 	shdr.Use();
+
 	level->Init();
 	level->Start();
 	Window::Loop(level, window);

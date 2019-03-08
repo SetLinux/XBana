@@ -34,7 +34,8 @@ void Level::Update(float dt)
 {
 	for (int i = 0; i < Sprites.size(); i++) {
 		Sprites[i]->Draw(dt);
-		std::cout << "i am drawing" << std::endl;
+
+
 	}
 }
 

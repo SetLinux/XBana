@@ -12,6 +12,7 @@ public:
 	void Init();
 	void Draw();
 	void Draw(float dt);
+	
 	void SetTexture(std::string path);
 	Shader* shdr;
 	glm::vec2 position;

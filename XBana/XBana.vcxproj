@@ -81,22 +81,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Component.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Object.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Components\SpriteComponent.cpp" />
     <ClCompile Include="src\imageloader.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\Sprite.cpp" />
     <ClCompile Include="src\Application.cpp" />
     <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Components\TransformComponent.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Components\ComponentType.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="Object.h" />
     <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Components\SpriteComponent.h" />
     <ClInclude Include="src\Shader.h" />
     <ClInclude Include="src\Sprite.h" />
+    <ClInclude Include="Components\TransformComponent.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="XTypes.h" />
     <ClInclude Include="stb_image.h" />
