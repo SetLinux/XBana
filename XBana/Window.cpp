@@ -1,7 +1,6 @@
 #include "Window.h"
 #include <iostream>
-
-
+GLFWwindow* Window::x_window;
 Window::Window()
 {
 }
@@ -15,11 +14,11 @@ void Window::Loop(Level* level, GLFWwindow* under)
 {
 
 	double t = 0.0;
-	float dt = (float)(1.f / 40.f);
+	float dt = (float)(1.f / 60.f);
 
 	double currentTime = glfwGetTime();
 	double accumulator = 0.0;
-
+	
 	while (!glfwWindowShouldClose(under))
 	{  // - Measure time
 		double newTime = glfwGetTime();
@@ -28,7 +27,7 @@ void Window::Loop(Level* level, GLFWwindow* under)
 			frameTime = 0.25;
 		currentTime = newTime;
 		accumulator += frameTime;
-
+	
 		while (accumulator >= dt)
 		{
 			level->FixedUpdate(dt);
@@ -48,9 +47,18 @@ void Window::Loop(Level* level, GLFWwindow* under)
 	}
 }
 
+int Window::GetKey(int key)
+{
+	int state = glfwGetKey(x_window, key);
+	
+	return state;
+}
+
+
 
 GLFWwindow * Window::MakeWindow()
 {
+	system("color 8F");
 	glfwInit();
 	GLFWwindow* window;
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -72,5 +80,7 @@ GLFWwindow * Window::MakeWindow()
 	{
 		std::cout << "GLEW Error: " << glewGetErrorString(err) << std::endl;
 	}
+	
+	x_window = window;
 	return window;
 }

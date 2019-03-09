@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="XBanaTest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="XBanaTest">
+				<Option output="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug/XBanaTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Rope"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include/GL"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW/include"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW/include/GLFW"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 XBanaTest"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="XBanaTest/fast">
+				<Option output="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug/XBanaTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Rope"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include/GL"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW/include"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW/include/GLFW"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd"/>
+					<Add directory="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 XBanaTest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Mohamed/source/repos/XBanaTest/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Mohamed\source\repos\XBanaTest\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Animation.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Animation.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Component.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Component.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/AnimationComponent.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/AnimationComponent.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/ComponentType.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/PhysicsComponent.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/PhysicsComponent.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/SpriteComponent.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/SpriteComponent.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/TransformComponent.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Components/TransformComponent.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Game.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Game.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Level.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Level.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Object.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Object.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/ResourceManager.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/ResourceManager.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Texture.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Texture.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Window.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/Window.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/XTypes.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/container.jpg">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/for.jpg">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/common.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/_features.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/_fixes.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/_noise.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/_swizzle.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/_swizzle_func.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/_vectorize.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/compute_common.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/compute_vector_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_common.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_common_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_exponential.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_exponential_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_geometric.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_geometric_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_integer.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_integer_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_matrix.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_matrix_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_packing.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_packing_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_trigonometric.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_trigonometric_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_vector_relational.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/func_vector_relational_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/glm.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/qualifier.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/setup.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_float.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_half.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_half.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat2x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat2x2.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat2x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat2x3.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat2x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat2x4.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat3x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat3x2.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat3x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat3x3.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat3x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat3x4.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x2.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x3.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x4.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_mat4x4_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_quat.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_quat.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_quat_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec1.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec2.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec3.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec4.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/detail/type_vec4_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/exponential.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_clip_space.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_clip_space.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double2x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double2x2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double2x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double2x3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double2x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double2x4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double3x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double3x2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double3x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double3x3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double3x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double3x4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double4x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double4x2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double4x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double4x3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double4x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_double4x4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float2x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float2x2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float2x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float2x3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float2x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float2x4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float3x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float3x2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float3x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float3x3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float3x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float3x4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float4x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float4x2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float4x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float4x3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float4x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_float4x4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_projection.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_projection.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_relational.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_transform.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/matrix_transform.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_common.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_common.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_common_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_double.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_double_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_exponential.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_exponential.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_float.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_float_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_geometric.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_geometric.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_relational.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_transform.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_transform.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_trigonometric.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/quaternion_trigonometric.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_common.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_common.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_constants.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_constants.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_int_sized.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_relational.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_uint_sized.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_ulp.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/scalar_ulp.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool1_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_bool4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_common.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_common.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double1_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_double4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float1_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_float4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int1_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_int4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_relational.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint1_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint2_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint3_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_uint4_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_ulp.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/ext/vector_ulp.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/fwd.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/geometric.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/glm.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/bitfield.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/bitfield.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/color_space.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/color_space.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/constants.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/constants.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/epsilon.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/epsilon.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/integer.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/integer.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_access.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_access.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_integer.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_inverse.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_inverse.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_transform.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/matrix_transform.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/noise.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/noise.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/packing.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/packing.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/quaternion.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/quaternion.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/quaternion_simd.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/random.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/random.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/reciprocal.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/reciprocal.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/round.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/round.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/type_aligned.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/type_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/type_precision.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/type_ptr.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/type_ptr.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/ulp.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/ulp.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtc/vec1.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/associated_min_max.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/associated_min_max.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/bit.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/bit.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/closest_point.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/closest_point.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/color_encoding.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/color_encoding.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/color_space.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/color_space.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/color_space_YCoCg.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/color_space_YCoCg.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/common.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/common.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/compatibility.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/compatibility.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/component_wise.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/component_wise.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/dual_quaternion.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/dual_quaternion.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/easing.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/easing.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/euler_angles.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/euler_angles.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/extend.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/extend.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/extended_min_max.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/extended_min_max.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/exterior_product.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/exterior_product.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/fast_exponential.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/fast_exponential.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/fast_square_root.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/fast_square_root.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/fast_trigonometry.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/fast_trigonometry.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/float_notmalize.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/functions.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/functions.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/gradient_paint.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/gradient_paint.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/handed_coordinate_space.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/handed_coordinate_space.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/hash.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/hash.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/integer.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/integer.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/intersect.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/intersect.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/io.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/io.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/log_base.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/log_base.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_cross_product.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_cross_product.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_decompose.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_decompose.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_factorisation.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_factorisation.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_interpolation.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_interpolation.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_major_storage.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_major_storage.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_operation.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_operation.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_query.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_query.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_transform_2d.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/matrix_transform_2d.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/mixed_product.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/mixed_product.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/norm.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/norm.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/normal.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/normal.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/normalize_dot.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/normalize_dot.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/number_precision.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/number_precision.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/optimum_pow.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/optimum_pow.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/orthonormalize.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/orthonormalize.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/perpendicular.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/perpendicular.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/polar_coordinates.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/polar_coordinates.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/projection.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/projection.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/quaternion.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/quaternion.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/range.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/raw_data.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/raw_data.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/rotate_normalized_axis.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/rotate_normalized_axis.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/rotate_vector.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/rotate_vector.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/scalar_multiplication.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/scalar_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/scalar_relational.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/spline.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/spline.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/std_based_type.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/std_based_type.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/string_cast.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/string_cast.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/texture.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/texture.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/transform.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/transform.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/transform2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/transform2.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/type_aligned.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/type_aligned.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/type_trait.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/type_trait.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/vec_swizzle.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/vector_angle.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/vector_angle.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/vector_query.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/vector_query.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/wrap.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/gtx/wrap.inl">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/integer.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat2x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat2x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat2x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat3x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat3x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat3x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat4x2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat4x3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/mat4x4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/matrix.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/packing.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/common.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/exponential.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/geometric.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/integer.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/matrix.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/packing.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/platform.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/trigonometric.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/simd/vector_relational.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/trigonometric.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/vec2.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/vec3.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/vec4.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/glm/vector_relational.hpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/resource.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src/Application.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src/Shader.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src/Shader.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src/Sprite.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src/Sprite.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/src/imageloader.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/stb_image.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/XBana/terrain.png">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Box2D.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2ChainShape.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2ChainShape.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2CircleShape.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2CircleShape.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2EdgeShape.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2EdgeShape.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2PolygonShape.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2PolygonShape.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/Shapes/b2Shape.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2BroadPhase.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2BroadPhase.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2CollideCircle.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2CollideEdge.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2CollidePolygon.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2Collision.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2Collision.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2Distance.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2Distance.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2DynamicTree.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2DynamicTree.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2TimeOfImpact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Collision/b2TimeOfImpact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2BlockAllocator.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2BlockAllocator.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Draw.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Draw.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2GrowableStack.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Math.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Math.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Settings.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Settings.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2StackAllocator.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2StackAllocator.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Timer.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Common/b2Timer.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2CircleContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2CircleContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2Contact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2Contact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2ContactSolver.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2ContactSolver.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2PolygonContact.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Contacts/b2PolygonContact.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2DistanceJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2DistanceJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2FrictionJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2FrictionJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2GearJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2GearJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2Joint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2Joint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2MotorJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2MotorJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2MouseJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2MouseJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2PrismaticJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2PrismaticJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2PulleyJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2PulleyJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2RevoluteJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2RevoluteJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2RopeJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2RopeJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2WeldJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2WeldJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2WheelJoint.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/Joints/b2WheelJoint.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2Body.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2Body.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2ContactManager.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2ContactManager.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2Fixture.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2Fixture.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2Island.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2Island.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2TimeStep.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2World.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2World.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2WorldCallbacks.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Dynamics/b2WorldCallbacks.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Rope/b2Rope.cpp">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/Box2D/Include/Box2D/Rope/b2Rope.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include/GL/eglew.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include/GL/glew.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include/GL/glxew.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLEW/Include/GL/wglew.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW/include/GLFW/glfw3.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/deps/GLFW/include/GLFW/glfw3native.h">
+			<Option target="XBanaTest"/>
+		</Unit>
+		<Unit filename="C:/Users/Mohamed/source/repos/XBanaTest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

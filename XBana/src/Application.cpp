@@ -134,6 +134,7 @@ class MyLevel : public Level {
 	Object obj3;
 
 	virtual void Update(float dt) override {
+		
 		Level::Update(dt);
 		obj.Update(dt);
 		obj2.Update(dt);
@@ -141,6 +142,14 @@ class MyLevel : public Level {
 			std::cout << " A Problem " << std::endl;
 		}
 		obj3.Update(dt);
+		obj.GetComponent<PhysicsComponent>(Physics)->body->SetLinearVelocity(b2Vec2(0, obj.GetComponent<PhysicsComponent>(Physics)->body->GetLinearVelocity().y));
+
+		if (Window::GetKey(GLFW_KEY_A)) {
+			obj.GetComponent<PhysicsComponent>(Physics)->body->SetLinearVelocity(b2Vec2(-3, obj.GetComponent<PhysicsComponent>(Physics)->body->GetLinearVelocity().y));
+		}
+		if (Window::GetKey(GLFW_KEY_D)) {
+			obj.GetComponent<PhysicsComponent>(Physics)->body->SetLinearVelocity(b2Vec2(3, obj.GetComponent<PhysicsComponent>(Physics)->body->GetLinearVelocity().y));
+		}
 	};
 	virtual void FixedUpdate(float dt) override {
 		
@@ -149,15 +158,22 @@ class MyLevel : public Level {
 		obj3.FixedUpdate(dt);
 		Level::FixedUpdate(dt);
 		anim.Update(dt);
-		std::cout << anim.currentIndex << std::endl;
+		
 	
 	};
 public:
+	void MoveLeft() {
+
+	}
+	void MoveRight() {
+
+	}
 	void Start() {
 		
 		//MakeSprite(glm::vec2(0, 000), glm::vec2(100, 100), false, ResourceManager::LoadTexture("wall.jpg"));
 		//MakeSprite(glm::vec2(150, 000), glm::vec2(100, 100), false, ResourceManager::LoadTexture("wall.jpg"));
 		//MakeSprite(glm::vec2(0, 200), glm::vec2(400, 100), true, ResourceManager::LoadTexture("wall.jpg"));
+
 		Texture* test = ResourceManager::LoadTexture("terrain.png");
 		Texture* wall = ResourceManager::LoadTexture("wall.jpg");
 		obj.AddComponent<TransformComponent>();
@@ -172,7 +188,7 @@ public:
 		obj.AddComponent<PhysicsComponent>();
 		obj.Init();
 	
-	
+
 		obj2.AddComponent<TransformComponent>();
 		obj2.AddComponent<SpriteComponent>();
 		obj2.GetComponent<SpriteComponent>(Renderer)->tex = wall;
@@ -189,7 +205,9 @@ public:
 		obj3.Init();
 		obj3.GetComponent<PhysicsComponent>(Physics)->body->SetType(b2_staticBody);
 		anim.speed = 3.f;
+		anim.MakeAnimation(1, 5);
 		anim.TimeBetween = 5.f;
+		obj.GetComponent<AnimationComponent>(Animator)->animation = &anim;
 	}
 };
 int main() {

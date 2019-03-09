@@ -27,9 +27,9 @@ void PhysicsComponent::Init() {
 	b2FixtureDef fixtureDef;
 	body->SetType(b2_dynamicBody);
 	fixtureDef.shape = &shape;
-	fixtureDef.density = 12.0f;
-	fixtureDef.friction = 0.7f;
-	fixtureDef.restitution = .4f;
+	fixtureDef.density = 120.0f;
+	fixtureDef.friction = 0.1f;
+	fixtureDef.restitution = .2f;
 	body->CreateFixture(&fixtureDef);
 }
 void PhysicsComponent::Update(float dt){

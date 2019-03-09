@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <iostream>
 class Animation
 {
 public:
@@ -12,6 +13,7 @@ public:
 	float speed;
 	void Update(float dt);
 	int currentIndex;
+	void MakeAnimation(int start, int end);
 private:
 };
 

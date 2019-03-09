@@ -15,10 +15,12 @@ void AnimationComponent::Init()
 {
 }
 void AnimationComponent::Update(float dt) {
-
+	if (animation) {
+		index = animation->currentIndex;
+	}
 }
 void AnimationComponent::FixedUpdate(float dt) {
-
+	animation->Update(dt);
 }
 void AnimationComponent::SetIndex(int index) {
 	this->index = index;

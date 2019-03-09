@@ -1,5 +1,6 @@
 #pragma once
 #include "../Component.h"
+#include "../Animation.h"
 class AnimationComponent : public Component
 {
 public:
@@ -14,7 +15,7 @@ public:
 	int index;
 	float GetXOffset();
 	float GetYOffset();
-
+	Animation* animation;
 private:
 
 };
